@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Public Donation &amp; Information Portal - SIAM</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#191c1c",
+                        "error": "#ba1a1a",
+                        "background": "#f9f9f8",
+                        "surface": "#f9f9f8",
+                        "tertiary-fixed": "#c7f24b",
+                        "primary-container": "#063b00",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#172000",
+                        "tertiary-container": "#293700",
+                        "outline-variant": "#c1c9ba",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#edeeed",
+                        "secondary": "#2f6b19",
+                        "primary": "#022300",
+                        "on-tertiary-container": "#82a700",
+                        "outline": "#72796c",
+                        "primary-fixed": "#b8f2a2",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#9cd588",
+                        "on-secondary-container": "#35721f",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#191c1c",
+                        "surface-bright": "#f9f9f8",
+                        "surface-container-highest": "#e1e3e2",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#1f5113",
+                        "surface-variant": "#e1e3e2",
+                        "secondary-fixed": "#b0f591",
+                        "secondary-fixed-dim": "#95d878",
+                        "on-tertiary-fixed-variant": "#3b4d00",
+                        "surface-dim": "#d9dad9",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#71a85f",
+                        "secondary-container": "#b0f591",
+                        "on-secondary-fixed-variant": "#165200",
+                        "on-tertiary-fixed": "#161f00",
+                        "tertiary-fixed-dim": "#abd52e",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f3f4f3",
+                        "inverse-surface": "#2e3131",
+                        "on-primary-fixed": "#022100",
+                        "on-secondary-fixed": "#052100",
+                        "surface-container-high": "#e7e8e7",
+                        "primary-fixed-dim": "#9cd588",
+                        "surface-tint": "#376a29",
+                        "inverse-on-surface": "#f0f1f0",
+                        "on-surface-variant": "#42493d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "base": "8px",
+                        "xl": "80px",
+                        "gutter": "24px",
+                        "lg": "48px",
+                        "sm": "12px",
+                        "xs": "4px",
+                        "md": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .geometric-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2.5L22.5 16h2.5v-2.5L27.5 11h2.5V8.5L32.5 6h2.5V3.5L37.5 1h2.5v20H20v-.5z' fill='%23063b00' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col geometric-pattern">
+<!-- Top Navigation (Public) -->
+<header class="bg-surface border-b border-outline-variant shadow-sm docked full-width top-0 sticky z-40 flex justify-between items-center w-full h-16 px-lg max-w-[calc(100%)]">
+<div class="flex items-center gap-sm">
+<span class="font-headline-md text-headline-md font-extrabold text-primary">SIAM</span>
+</div>
+<nav class="hidden md:flex gap-md">
+<a class="text-on-surface-variant hover:text-secondary transition-all font-label-md text-label-md" href="#">Donations</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all font-label-md text-label-md" href="#">Schedule</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all font-label-md text-label-md" href="#">Services</a>
+</nav>
+<div class="flex items-center gap-sm text-primary font-label-md text-label-md">
+<span>Next Prayer: 12:15</span>
+</div>
+</header>
+<main class="flex-grow max-w-container-max mx-auto w-full px-4 md:px-lg py-lg flex flex-col gap-xl">
+<!-- Hero Section -->
+<section class="text-center py-xl">
+<div class="mx-auto w-32 h-32 mb-6 bg-surface-container rounded-full flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-6xl text-secondary" style="font-variation-settings: 'FILL' 1;">mosque</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-primary mb-4">Masjid Al-Ikhlas</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Welcome to our community portal. Join us in worship, community events, and support our ongoing projects.</p>
+</section>
+<!-- Real-time Prayer Times Bar -->
+<section class="bg-surface border border-outline-variant rounded-xl p-md shadow-sm">
+<h2 class="font-headline-md text-headline-md text-primary mb-md text-center">Today's Prayer Times</h2>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-sm text-center">
+<div class="p-sm bg-surface-container-low rounded-lg">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Fajr</div>
+<div class="font-headline-md text-headline-md text-primary mt-1">04:30</div>
+</div>
+<div class="p-sm bg-surface-container-low rounded-lg">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Dhuhr</div>
+<div class="font-headline-md text-headline-md text-primary mt-1">12:15</div>
+</div>
+<div class="p-sm bg-secondary-container rounded-lg border-2 border-secondary relative overflow-hidden">
+<div class="absolute inset-0 bg-secondary opacity-10"></div>
+<div class="font-label-sm text-label-sm text-on-secondary-container relative z-10">Asr</div>
+<div class="font-headline-md text-headline-md text-on-secondary-container relative z-10 mt-1">15:30</div>
+<span class="absolute top-1 right-1 flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+</span>
+</div>
+<div class="p-sm bg-surface-container-low rounded-lg">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Maghrib</div>
+<div class="font-headline-md text-headline-md text-primary mt-1">18:05</div>
+</div>
+<div class="p-sm bg-surface-container-low rounded-lg">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Isha</div>
+<div class="font-headline-md text-headline-md text-primary mt-1">19:20</div>
+</div>
+</div>
+</section>
+<!-- Donate Now Section -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-lg items-center">
+<div class="bg-surface border border-outline-variant rounded-xl p-lg shadow-sm flex flex-col items-center text-center">
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">Scan to Donate</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">Quickly donate using QRIS from your preferred mobile banking or e-wallet app.</p>
+<div class="bg-white p-4 rounded-lg border border-outline-variant shadow-sm mb-4">
+<img class="w-48 h-48 object-contain" data-alt="A clean, high-contrast QR code image intended for scanning mobile payments. It represents a QRIS code, set against a pristine white background. The QR pattern is crisp black, with a small, generic mosque icon subtly placed in the center of the QR code to indicate its purpose. The overall aesthetic is functional and modern." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF9RUqn8PfvaspmzyC7C66n8ObCsCB-UnDynmfdOQOkc_IrqkjphwTevl_PZ9yo2lAhTeMD2h8KQYGpxfmC9Q7-9vbV5YAzGP3rsS6ohQs6_uwDdwa5e65Adhcz0tKdJgw8LLkIOdB-k1jUaz9ZCYWqLRbSxia7f4ZhL4X1wVmH-QrP3abHOi-YFDD694nZ3IX8-1fTynbyFYzIY4Dya9IU3DN7uvp4kXAsReZuvK9X9twCsCr3S4h"/>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary/10 px-3 py-1 rounded-full uppercase tracking-wider">Verified Account</span>
+</div>
+<div class="flex flex-col gap-md">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Bank Transfer Details</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Alternatively, you can transfer directly to our official accounts below.</p>
+</div>
+<div class="bg-surface border border-outline-variant rounded-xl p-md flex items-center justify-between shadow-sm">
+<div>
+<div class="font-label-md text-label-md text-on-surface-variant">Bank Syariah Indonesia (BSI)</div>
+<div class="font-headline-md text-headline-md text-primary mt-1">7123 4567 890</div>
+<div class="font-label-sm text-label-sm text-outline mt-1">a.n Masjid Al-Ikhlas</div>
+</div>
+<button class="text-secondary hover:bg-surface-container-high p-2 rounded-full transition-colors" title="Copy Account Number">
+<span class="material-symbols-outlined">content_copy</span>
+</button>
+</div>
+<div class="bg-surface border border-outline-variant rounded-xl p-md flex items-center justify-between shadow-sm">
+<div>
+<div class="font-label-md text-label-md text-on-surface-variant">Bank Muamalat</div>
+<div class="font-headline-md text-headline-md text-primary mt-1">3210 9876 543</div>
+<div class="font-label-sm text-label-sm text-outline mt-1">a.n Yayasan Al-Ikhlas</div>
+</div>
+<button class="text-secondary hover:bg-surface-container-high p-2 rounded-full transition-colors" title="Copy Account Number">
+<span class="material-symbols-outlined">content_copy</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Transparency & Events Grid -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-lg">
+<!-- Transparency (2 columns) -->
+<div class="lg:col-span-2 bg-surface border border-outline-variant rounded-xl p-md md:p-lg shadow-sm">
+<div class="flex justify-between items-center mb-md border-b border-outline-variant pb-sm">
+<h3 class="font-headline-md text-headline-md text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-container">pie_chart</span>
+                        Fund Transparency
+                    </h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-1 rounded">Current Month</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md mb-lg">
+<div class="bg-surface-container-low p-md rounded-lg border border-outline-variant">
+<div class="font-label-md text-label-md text-on-surface-variant mb-1">Total Collected</div>
+<div class="font-headline-lg text-headline-lg text-primary">Rp 45.2M</div>
+</div>
+<div class="bg-surface-container-low p-md rounded-lg border border-outline-variant">
+<div class="font-label-md text-label-md text-on-surface-variant mb-1">Total Distributed</div>
+<div class="font-headline-lg text-headline-lg text-secondary">Rp 38.5M</div>
+</div>
+</div>
+<div class="h-64 w-full relative">
+<!-- Placeholder for Chart -->
+<div class="absolute inset-0 flex items-end justify-between px-4 pb-8 pt-4 gap-2">
+<div class="w-1/5 bg-tertiary-fixed rounded-t-sm h-[40%]" title="Operations"></div>
+<div class="w-1/5 bg-primary-container rounded-t-sm h-[80%]" title="Renovation"></div>
+<div class="w-1/5 bg-secondary rounded-t-sm h-[30%]" title="Charity"></div>
+<div class="w-1/5 bg-tertiary-container rounded-t-sm h-[50%]" title="Education"></div>
+</div>
+<div class="absolute bottom-0 left-0 w-full flex justify-between px-4 font-label-sm text-label-sm text-outline border-t border-outline-variant pt-2">
+<span>Ops</span>
+<span>Renov</span>
+<span>Charity</span>
+<span>Edu</span>
+</div>
+</div>
+</div>
+<!-- Upcoming Events (1 column) -->
+<div class="bg-surface border border-outline-variant rounded-xl p-md shadow-sm">
+<div class="flex justify-between items-center mb-md border-b border-outline-variant pb-sm">
+<h3 class="font-headline-md text-headline-md text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">event</span>
+                        Upcoming Events
+                    </h3>
+</div>
+<div class="flex flex-col gap-sm">
+<div class="p-sm bg-surface-container-low rounded-lg border border-outline-variant flex gap-sm">
+<div class="flex flex-col items-center justify-center bg-white p-2 rounded border border-outline-variant min-w-[60px]">
+<span class="font-label-sm text-label-sm text-error">OCT</span>
+<span class="font-headline-md text-headline-md text-primary leading-none">15</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-primary font-bold">Kajian Ahad Pagi</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 05:30 - 07:00
+                            </div>
+</div>
+</div>
+<div class="p-sm bg-surface-container-low rounded-lg border border-outline-variant flex gap-sm">
+<div class="flex flex-col items-center justify-center bg-white p-2 rounded border border-outline-variant min-w-[60px]">
+<span class="font-label-sm text-label-sm text-error">OCT</span>
+<span class="font-headline-md text-headline-md text-primary leading-none">18</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-primary font-bold">Bakti Sosial Kesehatan</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 08:00 - 12:00
+                            </div>
+</div>
+</div>
+<div class="p-sm bg-surface-container-low rounded-lg border border-outline-variant flex gap-sm">
+<div class="flex flex-col items-center justify-center bg-white p-2 rounded border border-outline-variant min-w-[60px]">
+<span class="font-label-sm text-label-sm text-error">OCT</span>
+<span class="font-headline-md text-headline-md text-primary leading-none">22</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-primary font-bold">Kelas Tahsin Remaja</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 16:00 - 17:30
+                            </div>
+</div>
+</div>
+</div>
+<button class="w-full mt-md py-2 border border-secondary text-secondary font-label-md text-label-md rounded-lg hover:bg-secondary hover:text-white transition-colors">
+                    View Full Calendar
+                </button>
+</div>
+</section>
+</main>
+<footer class="bg-surface border-t border-outline-variant py-md mt-xl text-center font-label-sm text-label-sm text-on-surface-variant">
+<p>© 2023 Masjid Al-Ikhlas Management System. All rights reserved.</p>
+</footer>
+</body></html>
