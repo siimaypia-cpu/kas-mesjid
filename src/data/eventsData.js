@@ -1,0 +1,71 @@
+export const upcomingEvents = [
+  {
+    id: 1,
+    title: "Tafsir Al-Baqarah",
+    date: "Oct",
+    day: "12",
+    dateTime: "18:30 - 20:00",
+    location: "Main Hall",
+    variant: "tertiary",
+  },
+  {
+    id: 2,
+    title: "Youth Halaqah",
+    date: "Oct",
+    day: "15",
+    dateTime: "09:00 - 11:30",
+    location: "Online",
+    variant: "secondary",
+  },
+];
+
+export const selectedEvent = {
+  id: 3,
+  title: "Kajian Rutin: Fiqh Muamalah",
+  date: "Thursday, Oct 5, 2023",
+  time: "Ba'da Maghrib - Isya",
+  speaker: {
+    name: "Ust. Dr. Ahmad Fulan",
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuBVr2Bh1HMPq5ObTafZ6Op9SEe0_VYaLdeczFNbmwnX2SqwiFhOrYraQzOo0EW3xPHJVg6CRU63-ZJua0UwqkVuO-4mOlsdYOoMBO20DlLI4-hpm6rEyHsgnzVxI1ec_hbYFxn-sCISIVoQBFI4X3G46QNoAP1K-s8psNxj452FLqr9C7-BHESP7mv3MFNNejtjWqZoYJc3MafLjnrDXM3hg7cVKAU2goRN4YD28obgIEaWQPf3K-JD",
+  },
+  location: {
+    name: "Main Hall",
+    detail: "Masjid Al-Ikhlas, 1st Floor",
+  },
+  theme: "Principles of Islamic Finance in Modern Trading",
+};
+
+export const calendarDays = [
+  { day: 1, isCurrentMonth: true, isToday: false },
+  { day: 2, isCurrentMonth: true, isToday: true, dots: [{ color: "bg-secondary" }] },
+  { day: 3, isCurrentMonth: true, isToday: false },
+  { day: 4, isCurrentMonth: true, isToday: false },
+  { day: 5, isCurrentMonth: true, isToday: false, isPrimary: true },
+  { day: 6, isCurrentMonth: true, isToday: false, dots: [{ color: "bg-tertiary-fixed" }] },
+  { day: 7, isCurrentMonth: true, isToday: false },
+  { day: 8, isCurrentMonth: true, isToday: false },
+  { day: 9, isCurrentMonth: true, isToday: false },
+  { day: 10, isCurrentMonth: true, isToday: false },
+  { day: 11, isCurrentMonth: true, isToday: false },
+  { day: 12, isCurrentMonth: true, isToday: false },
+  { day: 13, isCurrentMonth: true, isToday: false },
+  { day: 14, isCurrentMonth: true, isToday: false },
+  { day: 15, isCurrentMonth: true, isToday: false },
+  { day: 16, isCurrentMonth: true, isToday: false },
+  { day: 17, isCurrentMonth: true, isToday: false },
+  { day: 18, isCurrentMonth: true, isToday: false },
+  { day: 19, isCurrentMonth: true, isToday: false },
+  { day: 20, isCurrentMonth: true, isToday: false },
+  { day: 21, isCurrentMonth: true, isToday: false },
+  { day: 22, isCurrentMonth: true, isToday: false },
+  { day: 23, isCurrentMonth: true, isToday: false },
+  { day: 24, isCurrentMonth: true, isToday: false },
+  { day: 25, isCurrentMonth: true, isToday: false },
+  { day: 26, isCurrentMonth: true, isToday: false },
+  { day: 27, isCurrentMonth: true, isToday: false },
+  { day: 28, isCurrentMonth: true, isToday: false },
+  { day: 29, isCurrentMonth: true, isToday: false },
+  { day: 30, isCurrentMonth: true, isToday: false },
+  { day: 31, isCurrentMonth: true, isToday: false },
+];
